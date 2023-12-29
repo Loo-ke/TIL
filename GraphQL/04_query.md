@@ -271,4 +271,5 @@ query Hero($episode: Episode, $withFriends: Boolean!) {
 }
 ```
 > `@include(if : Boolean)` - 인자가 true인 경우에만 이 필드를 결과에 포함한다.
-`@skip(if : Boolean)` - 인자가 true이면 이 필드를 건너 뛴다.
+>
+>`@skip(if : Boolean)` - 인자가 true이면 이 필드를 건너 뛴다.
