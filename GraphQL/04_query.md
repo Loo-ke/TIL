@@ -17,7 +17,7 @@ query UserInfo($id : ID){
     }
 }
 ```
-#### query name 
+#### Query Name 
 - `ProductInfo`
 - query의 이름은 가져온 데이터에 영향을 미치지 않으며, query가 어떤 query인지 식별하기 위한 용도로 사용된다.
 #### Variable 
