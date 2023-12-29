@@ -9,7 +9,7 @@
 - 아래 query에서는 사용자 정보를 가져오는데 이름, 회사, 스킬들을 가져온다.
 ```
 //요청
-query UserInfo($id : ID){
+query UserInfo($userId : ID){
     user(userID : $id){
         name
         company
@@ -21,7 +21,7 @@ query UserInfo($id : ID){
 - `ProductInfo`
 - query의 이름은 가져온 데이터에 영향을 미치지 않으며, query가 어떤 query인지 식별하기 위한 용도로 사용된다.
 #### Variable 
-- `($id(variable) : ID(type))`
+- `($userId(variable) : ID(type))`
 - 변수는 $가 앞에 붙어 선언된 값, ':' 기준으로 왼쪽에 변수명이 오고 오른쪽에는 변수 타입이 온다. 이곳에는 우리가 데이터를 가져오기 위해 넣어야하는 변화하는 값을 넣는다.
 - 예를들어 ID를 식별자로 제품의 정보를 가져오고 싶다면 id라는 변수를 $id로 선언 후 뒤에 타입인 ID를 붙이면 된다.
 #### Field
@@ -273,3 +273,5 @@ query Hero($episode: Episode, $withFriends: Boolean!) {
 > `@include(if : Boolean)` - 인자가 true인 경우에만 이 필드를 결과에 포함한다.
 >
 >`@skip(if : Boolean)` - 인자가 true이면 이 필드를 건너 뛴다.
+
+- 변수를 사용하여 쿼리의 구조와 형태를 동적으로 변경할 수 있다.
