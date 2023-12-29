@@ -37,7 +37,7 @@ mutation CreateCommentForUser($nm : Name!, $comment : CommentInput!){
 ```
 - createComment 필드가 새로 생성된 댓글의 stars와 commentary필드를 반환한다.
 - 하나의 요청으로 필드의 새 값을 변경할 수 있기 때문에 기존 데이터를 변경하는 경우(필드를 증가시킬때) 유용하다.
-## Inline Fragments
+## Inline Fragments  
 - 객체 리스트를 반환하는 방법은 살펴보았다. 이들은 모두 한가지 타입의 리스트로만 반환이 되었다. 여러개의 타입을 리스트에 받아와 반환할 수 는 없는걸까?
 - 유니언  타입을 만들면 된다.
 ```
