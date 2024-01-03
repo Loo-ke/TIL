@@ -14,5 +14,3 @@ result = prompt(title, [default]);
 - `title` : 사용자에게 보여줄 문자열
 - `default` : 입력 필드의 초깃값
     - default를 감싸는 대괄호는 이 배개변수가 필수가 아닌 **선택값**이라는 것을 의미
-
-git commit --amend --author="Loo-ke <looke2930@gmail.com>"
