@@ -86,6 +86,7 @@ export default defineComponent({
 ## 현실적인 예제
 JavaScript에서도 피니아를 사용할 수 있는 예제이다.
 ```
+//todos.js
 import {defineStore} from 'pinia'
 
 export const useTodos = defineStore('todos', {
@@ -118,5 +119,45 @@ export const useTodos = defineStore('todos', {
         },
     },
 })
+```
 
+```
+//app.vue
+<script setup>
+import { ref } from 'vue'
+import { storeToRefs } from 'pinia'
+import { useTodos } from './todos.js'
+
+const todosStore = useTodos()
+const { filter, filteredTodos } = storeToRefs(todosStore)
+
+const newTodoText = ref('')
+
+function addTodo() {
+  if (!newTodoText.value) {
+    return
+  }
+
+  todosStore.addTodo(newTodoText.value)
+  newTodoText.value = ''
+}
+</script>
+
+<template>
+  <label><input v-model="filter" type="radio" value="all"> All</label>
+  <label><input v-model="filter" type="radio" value="finished"> Finished</label>
+  <label><input v-model="filter" type="radio" value="unfinished"> Unfinished</label>
+  <hr>
+  <ul>
+    <li v-for="todo in filteredTodos" :key="todo.id">
+      <input v-model="todo.isFinished" type="checkbox">
+      {{ todo.text }}
+    </li>
+  </ul>
+  <label>
+    New Todo:
+    <input v-model="newTodoText" type="text" @keypress.enter="addTodo">
+  </label>
+  <button :disabled="!newTodoText" @click="addTodo">Add</button>
+</template>
 ```
