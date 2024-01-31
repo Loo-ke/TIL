@@ -43,12 +43,12 @@ var f = function add(x,y){
 - 함수 정의란 함수를 호출하기 이전에 인수를 전달받을 매개변수와 실행할 문들, 그리고 반환할 값을 지정하는 것을 말한다. 정의된 함수는 자바스크립트 엔진에 의해 평가되어 함수 객체가 된다.
 
 >함수 선언문 : `function add(x, y){ return x + y; }`
-<br />
-함수 표현식 : `var add = function(x, y){ return x + y }`
-<br/>
-function 생성자 함수 : `var add = new Function('x','y', 'return x + y');`
-<br />
-화살표 함수(ES6) : var add = (x, y) => x + y;
+>
+>함수 표현식 : `var add = function(x, y){ return x + y }`
+>
+>function 생성자 함수 : `var add = new Function('x','y', 'return x + y');`
+>
+>화살표 함수(ES6) : `var add = (x, y) => x + y;`
 
 - 모든 함수 정의 방식은 함수를 정의한다는 면에서는 동일하다. 단 미묘하지만 중요한 차이가 있다.
 
