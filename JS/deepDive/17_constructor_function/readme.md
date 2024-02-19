@@ -18,13 +18,13 @@ const person1 = {
 console.log(person1.getPersonName()); // Hi, My Name is WI
 
 const person2 = {
-  name: "YOUNGMIN",
+  name: "JONGUK",
   getPersonName() {
     return `Hi, My Name is ${this.name}`;
   },
 };
 
-console.log(person2.getPersonName()); // Hi, My Name is YOUNGMIN
+console.log(person2.getPersonName()); // Hi, My Name is JONGUK
 ```
 - 객체는 다음 2가지로 표현할 수 있다.
   - 프로퍼티를 통해 → 객체 고유의 상태(state)
@@ -45,11 +45,11 @@ function Person(name) {
 
 // new 연산자와 함께 Person 객체(인스턴스) 생성
 const person1 = new Person("WI");
-const person2 = new Person("YOUNGMIN");
+const person2 = new Person("JONGUK");
 
 // 각 Person 객체의 메서드 호출
 console.log(person1.getPersonName()); // Hi, My Name is WI
-console.log(person2.getPersonName()); // Hi, My Name is YOUNGMIN
+console.log(person2.getPersonName()); // Hi, My Name is JONGUK
 ```
 #### 자바스크립트에서 생성자 함수
 - 일반적인 클래스 기반 객체지향언어에서 생성자와는 다르게, 자바스크립트에서 생성자는 형식이 정해져 있지 않다.
