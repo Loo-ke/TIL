@@ -12,12 +12,16 @@ function Queue() {
     front++;
     return value;
   }
+  function frontFunc() {
+    return data[front];
+  }
   function print() {
     console.log(data);
   }
   return {
     enqueue,
     dequeue,
+    frontFunc,
     print,
   };
 }
@@ -32,5 +36,6 @@ myQueue.enqueue(3);
 myQueue.print();
 myQueue.dequeue();
 myQueue.print();
+console.log(myQueue.frontFunc());
 myQueue.dequeue();
 myQueue.print();
