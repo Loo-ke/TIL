@@ -38,7 +38,8 @@ function search(root, value) {
 }
 
 // 랜덤 정수 배열 생성
-const arr = Array.from({ length: 10 }, () => Math.floor(Math.random() * 100));
+// const arr = Array.from({ length: 10 }, () => Math.floor(Math.random() * 100));
+const arr = [8,4,2,5,9,3,7]
 
 // 이진 검색 트리 루트 노드 생성
 let root = null;
@@ -49,8 +50,7 @@ arr.forEach((value) => {
 });
 
 // 특정 값 검색
-const targetValue = 50;
-const node = search(root, targetValue);
+const node = search(root, 30);
 
 // 검색 결과 출력
 if (node === null) {
