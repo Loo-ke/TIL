@@ -50,7 +50,8 @@ arr.forEach((value) => {
 });
 
 // 특정 값 검색
-const node = search(root, 30);
+const targetValue = 5;
+const node = search(root, targetValue);
 
 // 검색 결과 출력
 if (node === null) {

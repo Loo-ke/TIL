@@ -1,26 +1,27 @@
 // const randomNumber = Math.floor(Math.random() * 50)
 
-// const arr = []
-// function getRandomNum(){
-//   for(let i = 1; i <= 100; i++){
-//     const randomNumber = Math.floor(Math.random() * 100)
-//     if (arr.indexOf(randomNumber) === -1) {
-//       arr.push(randomNumber)
-//     }else{
-//       i--
-//     }
-//   }
-// }
+const arr = []
+function getRandomNum(){
+  for(let i = 1; i <= 100; i++){
+    const randomNumber = Math.floor(Math.random() * 100)
+    if (arr.indexOf(randomNumber) === -1) {
+      arr.push(randomNumber)
+    }else{
+      i--
+    }
+  }
+}
 
-// getRandomNum()
-// console.log(arr, arr.length)
+getRandomNum()
+console.log(arr, arr.length)
 
 
 // 랜덤의 숫자가 들어간 배열에서 트리구조를 사용해서 검색 방법을 구현해보자!
 
 
 
-const arr = [3,5,1,6,4,8]
+// const arr = [3,5,1,6,4,8]
+
 function TreeNode(value) {
   return {
     value,
@@ -76,7 +77,7 @@ function searchNode(node, value) {
 const rootNode = createTree(arr);
 
 // 특정 값 검색
-const searchedNode = searchNode(rootNode, 8);
+const searchedNode = searchNode(rootNode, 10);
 
 if (searchedNode !== null) {
   console.log(`찾은 값: ${searchedNode.value}`);
