@@ -1,0 +1,9 @@
+body{
+  background-color: gray;
+  text-align: center;
+  color : #fff;
+}
+
+ul, ol{
+  list-style: none;
+}
