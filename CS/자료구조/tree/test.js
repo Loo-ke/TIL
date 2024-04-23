@@ -7,7 +7,7 @@ function createNode(value) {
   };
 }
 
-// 이진 검색 트리 삽입 함수
+// 이진 검색 트리 삽입 함수`
 function insert(root, value) {
   if (root === null) {
     return createNode(value);
