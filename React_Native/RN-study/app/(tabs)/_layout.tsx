@@ -1,5 +1,6 @@
 import FontAwesome from "@expo/vector-icons/FontAwesome";
 import { Tabs } from "expo-router";
+import { View, Text } from "react-native";
 
 export default function TabLayout() {
   return (
@@ -19,6 +20,15 @@ export default function TabLayout() {
           title: "Settings",
           tabBarIcon: ({ color }) => (
             <FontAwesome size={28} name="cog" color={color} />
+          )
+        }}
+      />
+      <Tabs.Screen
+        name="lists"
+        options={{
+          title: "lists",
+          tabBarIcon: ({ color }) => (
+            <FontAwesome size={28} name="list" color={color} />
           )
         }}
       />

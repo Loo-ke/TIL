@@ -1,17 +1,9 @@
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text } from "react-native";
 
 export default function Tab() {
   return (
-    <View style={styles.container}>
-      <Text>Tab [Home|Settings]</Text>
+    <View>
+      <Text className="text-red-400 bg-green-300">Tab [Home|Settings]</Text>
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center"
-  }
-});
