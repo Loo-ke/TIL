@@ -6,4 +6,3 @@
 ## 분류
 ### vue
 * [intro](https://github.com/Loo-ke/TIL/blob/main/Vue/01_intro.md)
-* [intro](https://github.com/Loo-ke/TIL/blob/main/Vue/01_intro.md)
